@@ -34,7 +34,7 @@ function sortTable(n) {
     dir,
     switchcount = 0;
 
-  table = document.getElementById("table");
+  table = document.getElementById("commits");
 
   switching = true;
 
