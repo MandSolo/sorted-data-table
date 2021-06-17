@@ -1,13 +1,23 @@
+:root {
+  --font-size-base: 12px;
+  --spacing-base: 8px;
+  --white: #fff;
+  --black: #000;
+  --grey: #eee;
+  --header-bg: tomato;
+  --hover-bg: lemonchiffon;
+}
+
 #commits {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  font-size: 12px;
+  font-size: var(--font-size-base);
 }
 
 #commits td,
 #commits th {
-  border: 1px solid #000;
-  padding: 8px;
+  border: 1px solid var(--black);
+  padding: var(--spacing-base);
 }
 
 /* hide url column on small screen sizes */
@@ -25,28 +35,31 @@
 }
 
 #commits tr:nth-child(even) {
-  background-color: #eee;
+  background-color: var(--grey);
 }
 
 #commits tr:hover {
-  background-color: lemonchiffon;
+  background-color: var(--hover-bg);
 }
 
 #commits th {
-  padding: 8px;
-  background-color: tomato;
-  color: #fff;
+  padding: var(--spacing-base);
+  background-color: var(--header-bg);
+  color: var(--white);
+  font-size: calc(var(--font-size-base) * 1.5);
 }
 
 #commits th button {
   cursor: pointer;
-  padding: 8px;
-  background-color: #ddd;
+  padding: var(--spacing-base);
+  background-color: var(--grey);
   border: none;
-  margin-top: 8px;
+  margin-top: var(--spacing-base);
+  text-transform: uppercase;
+  font-size: calc(var(--font-size-base) * 0.75);
 }
 
 #commits th button:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--black);
+  color: var(--white);
 }

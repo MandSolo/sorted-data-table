@@ -23,6 +23,8 @@ function buildTable() {
 
 buildTable();
 
+// sort function works for both columns due to iso date formatting - if date was formatted differently then separate functions would be needed
+
 function sortTable(n) {
   let table,
     rows,

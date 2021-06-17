@@ -10,22 +10,20 @@
   </head>
 
   <body>
-    <div class="container">
-      <table id="commits">
-        <thead>
-          <tr>
-            <th>
-              Author Name
-              <button onclick="sortTable(0)">Sort alphabetically</button>
-            </th>
-            <th>Date <button onclick="sortTable(1)">Sort asc/desc</button></th>
-            <th>Message</th>
-            <th>URL</th>
-          </tr>
-        </thead>
-        <tbody id="data"></tbody>
-      </table>
-    </div>
+    <table id="commits">
+      <thead>
+        <tr>
+          <th>
+            Author Name
+            <button onclick="sortTable(0)">Sort alphabetically</button>
+          </th>
+          <th>Date <button onclick="sortTable(1)">Sort asc/desc</button></th>
+          <th>Message</th>
+          <th>URL</th>
+        </tr>
+      </thead>
+      <tbody id="data"></tbody>
+    </table>
 
     <script src="scripts/main.js"></script>
   </body>

@@ -3,3 +3,5 @@
 Table displays commit history for endpoint https://api.github.com/repositories/19438/commits.
 
 Columns for name and date can be sorted using buttons in the table headers.
+
+URL column is hidden on small screen sizes to improve layout.
